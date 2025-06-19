@@ -1,0 +1,310 @@
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    line-height: 1.6;
+}
+
+/* FONTS */
+.rubik-glitch-regular {
+  font-family: "Rubik Glitch", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Iconos*/
+
+
+
+
+/* Menú hamburguesa fijo y desplegable */
+
+/* Overlay oculto por defecto */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* fondo oscuro transparente */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 500;
+}
+
+/* Mostrar overlay cuando el menú está abierto */
+#menu-toggle:checked ~ .overlay {
+    opacity: 1;
+    pointer-events: all; /* ahora sí intercepta clics */
+}
+
+/* Botón menú hamburguesa fijo */
+.menu-btn {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000;
+    cursor: pointer;
+    background-color: #111;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+/* El icono se define en un span */
+.menu-btn .icon::before {
+    content: "☰"; 
+    font-size: 2rem;
+    color: white;
+}
+
+/* Cuando el checkbox está activado, cambia a "✖" */
+#menu-toggle:checked + .menu-btn .icon::before {
+    content: "✖"; /* icono cerrar */
+}
+
+/* Menú de navegación oculto por defecto */
+.menu-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease-out;
+    z-index: 999;
+}
+
+
+/* Cuando está activo, se despliega */
+#menu-toggle:checked ~ .menu-nav {
+    max-height: 300px; 
+    transition: max-height 0.4s ease-in;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.menu-nav ul {
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-nav li {
+    margin: 0.5rem 0;
+}
+
+.menu-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.menu-nav a:hover {
+    color: #f00;
+}
+
+
+/* Redes sociales y contacto */
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    padding: 1rem;
+    gap: 10px;
+}
+
+.social img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Logo central de Skrillex */
+
+.logo-central {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.logo-central img {
+    width: 80px;
+}
+
+.logo-central h1 {
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+}
+
+/* Imagenes */
+
+
+
+/* Video de Youtube (iframe) */
+
+.video {
+    text-align: center;
+    padding: 2rem;
+}
+
+.video iframe {
+    width: 90%;
+    max-width: 560px;
+    border-radius: 10px;
+}
+
+/* Temas destacados */
+
+.temas {
+    padding: 2rem;
+    text-align: center;
+}
+
+.temas .tema img:hover {
+  box-shadow: 0 0 2px 1px rgb(255, 255, 255);
+}
+
+.temas h2 {
+    margin-bottom: 1rem;
+}
+
+.temas .tema {
+    display: inline-block;
+    margin: 10px;
+}
+
+.temas .tema img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid rgb(119, 229, 248);
+    border-radius: 4px;
+}
+
+/* Imagen divisoria */
+
+.imagen-divisoria img {
+    width: 100%;
+    display: block;
+    margin: 2rem 0;
+}
+
+/* Tours (galería con banderas) */
+
+.tours {
+    padding: 2rem;
+    background-color: #000;
+    text-align: center;
+}
+
+.tours h2 {
+    margin-bottom: 1rem;
+}
+
+.lugar {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.lugar img {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+
+
+/* Formulario de suscripción */
+
+.suscripcion {
+    background: #222;
+    padding: 2rem;
+    text-align: center;
+}
+
+.suscripcion h2 {
+    margin-bottom: 1rem;
+}
+
+.suscripcion form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.suscripcion input[type="text"],
+.suscripcion input[type="email"],
+.suscripcion input[type="tel"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Checkbox de términos */
+.suscripcion input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Botón de enviar */
+.suscripcion button {
+    padding: 10px;
+    background: #f00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.suscripcion button:hover {
+    background: #c00;
+}
+
+/* Footer */
+
+footer {
+    background: #333333;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-redes img {
+    width: 24px;
+    margin: 0 5px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+    .menu-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .temas .tema img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .video iframe {
+        height: 200px;
+    }
+}

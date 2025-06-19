@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Skrillex</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&family=Rubik+Glitch&family=Rubik+Iso&family=Rubik+Maze&family=VT323&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/iconoweb.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Menú hamburguesa y encabezado -->
+ <header>
+  <!-- Checkbox oculto que controla el menú -->
+  <input type="checkbox" id="menu-toggle" hidden>
+
+  <!-- Label actúa como botón hamburguesa y cambia con CSS -->
+  <label for="menu-toggle" class="menu-btn">
+    <span class="icon"></span>
+  </label>
+  <!-- Menú de navegación -->
+  <nav class="menu-nav">
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Lo ultimo</a></li>
+      <li><a href="#">Tours</a></li>
+      <li><a href="#">Eventos Asistidos</a></li>
+      <li><a href="#">Subscribete</a></li>
+      <li><a href="#">Redes Sociales</a></li>
+    </ul>
+  </nav>
+  <div class="overlay"></div>
+</header>
+
+    <!-- Logo de Skrillex -->
+    <section class="logo-central">
+        <img src="img/isotipo.png" alt="Logo Skrillex grande" class="">
+    </section>
+
+    <!-- Video de Youtube con iframe -->
+    <section class="video">
+        <h2 class="rubik-glitch-regular">F*CK U SKRILLEX YOU THINK UR ANDY WARHOL BUT UR NOT!!</h2>
+        <iframe width="1109" height="624" src="https://www.youtube.com/embed/Xwml50CG6LA" 
+        title="F*CK U SKRILLEX YOU THINK UR ANDY WARHOL BUT UR NOT!!" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <!-- Temas destacados -->
+    <section class="temas">
+        <h2>Temas destacados</h2>
+        <div class="tema">
+            <a target="_blank" href="https://www.youtube.com/watch?v=6JYIGclVQdw&list=PL9Z0stL3aRykWNoVQW96JFIkelka_93Sc">
+            <img src="img/skrillexrecess.jpg" alt="Imagen del tema 1" href="">
+            </a>
+        </div>
+        <div class="tema">
+            <a target="_blank" href="https://www.youtube.com/watch?v=4MQQCFaV2fM&list=PL9Z0stL3aRykA6gT3zqmSWKw9Ix-cMT9V">
+            <img src="img/questforfire.jpg" alt="Imagen del tema 2" href="">
+            </a>
+        </div>
+        <div class="tema">
+            <a target="_blank" href="https://www.youtube.com/watch?v=pP-GzB6kDx8&list=PL9Z0stL3aRyn7V15oAxYy_3wOXq-iGH7u">
+            <img src="img/dontgettooclose.png" alt="Imagen del tema 3" href="">
+            </a>
+        </div>
+    </section>
+
+    <!-- Imagen divisoria -->
+    <section class="imagen-divisoria">
+        <img src="img/fotolinternas.jpg" alt="Skrillex en su mesa de DJ">
+    </section>
+
+    <!-- Tours -->
+    <section class="tours">
+        <h2>Tours</h2>
+        <div class="lugar">
+            <img src="img/skrillex-eeuu.jpg" alt="Lugar en vivo en estados unidos">
+            <img src="img/skrillex-eeuu.jpg" alt="Lugar en vivo en estados unidos">
+            <img src="img/skrillex-eeuu.jpg" alt="Lugar en vivo en estados unidos">
+        </div>
+        <div class="lugar">
+            <img src="img/skrillex-japan.jpg" alt="Lugar en vivo">
+            <img src="img/skrillex-japan.jpg" alt="Lugar en vivo">
+            <img src="img/skrillex-japan.jpg" alt="Lugar en vivo">
+        </div>
+        <div class="lugar">
+            <img src="img/skrillex-arg.jpg" alt="Lugar en vivo">
+            <img src="img/skrillex-arg.jpg" alt="Lugar en vivo">
+            <img src="img/skrillex-arg.jpg" alt="Lugar en vivo">
+        </div>
+    </section>
+
+    <!-- Formulario de suscripción -->
+    <section class="suscripcion">
+        <h2>Suscribite</h2>
+        <h4>¡¡Recibe informacion en el acto de cuando lanza sus nuevas canciones o participa en eventos!!</h4>
+        <br>
+        <form>
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="text" name="apellido" placeholder="Apellido">
+            <input type="email" name="email" placeholder="Email">
+            <input type="tel" name="celular" placeholder="Celular" pattern="[0-9]+" minlength="8">
+            
+            <!-- Switch de términos (simulado con checkbox) -->
+            <label>
+                <input type="checkbox" required>
+                ¿Acepta los términos?
+            </label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="footer-redes">
+            <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+            <a href="#"><img src="svg/cloud_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Sound Cloud"></a>
+            <a href="#"><img src="svg/youtube_activity_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Youtube"></a>
+            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="twitter.png" alt="Twitter"></a>
+        </div>
+        <p>&copy; 2025 Skrillex Fan Page - Todos los derechos reservados</p>
+        <p>Hecho por <a href="#">Lucas Damian Cabrera</a></p>
+
+    </footer>
+
+</body>
+</html>
