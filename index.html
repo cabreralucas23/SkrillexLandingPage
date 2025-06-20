@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.5.0/css/flag-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&family=Rubik+Glitch&family=Rubik+Iso&family=Rubik+Maze&family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&family=Rubik+Bubbles&family=Rubik+Glitch&family=Rubik+Iso&family=Rubik+Maze&family=VT323&display=swap" rel="stylesheet">
     <link rel="icon" href="img/iconoweb.ico" type="image/x-icon">
 </head>
 <body>
@@ -23,24 +25,24 @@
   <!-- Menú de navegación -->
   <nav class="menu-nav">
     <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Lo ultimo</a></li>
-      <li><a href="#">Tours</a></li>
-      <li><a href="#">Eventos Asistidos</a></li>
-      <li><a href="#">Subscribete</a></li>
-      <li><a href="#">Redes Sociales</a></li>
+      <li><a href="#logo-central" class="rubik-broken-fax-regular">Inicio</a></li>
+      <li><a href="#video" class="rubik-broken-fax-regular">Lo ultimo</a></li>
+      <li><a href="#temas" class="rubik-broken-fax-regular">Ultimos albums </a></li>
+      <li><a href="#tours" class="rubik-broken-fax-regular">Tours</a></li>
+      <li><a href="#festivales" class="rubik-broken-fax-regular">Festivales en Vivo</a></li>
+      <li><a href="#suscripcion" class="rubik-broken-fax-regular">Subscribete</a></li>
     </ul>
   </nav>
   <div class="overlay"></div>
 </header>
 
     <!-- Logo de Skrillex -->
-    <section class="logo-central">
+    <section id="logo-central" class="logo-central">
         <img src="img/isotipo.png" alt="Logo Skrillex grande" class="">
     </section>
 
     <!-- Video de Youtube con iframe -->
-    <section class="video">
+    <section id="video" class="video">
         <h2 class="rubik-glitch-regular">F*CK U SKRILLEX YOU THINK UR ANDY WARHOL BUT UR NOT!!</h2>
         <iframe width="1109" height="624" src="https://www.youtube.com/embed/Xwml50CG6LA" 
         title="F*CK U SKRILLEX YOU THINK UR ANDY WARHOL BUT UR NOT!!" frameborder="0" 
@@ -49,8 +51,8 @@
     </section>
 
     <!-- Temas destacados -->
-    <section class="temas">
-        <h2>Temas destacados</h2>
+    <section id="temas" class="temas">
+        <h2 class="rubik-glitch-regular">Albums destacados</h2>
         <div class="tema">
             <a target="_blank" href="https://www.youtube.com/watch?v=6JYIGclVQdw&list=PL9Z0stL3aRykWNoVQW96JFIkelka_93Sc">
             <img src="img/skrillexrecess.jpg" alt="Imagen del tema 1" href="">
@@ -73,61 +75,77 @@
         <img src="img/fotolinternas.jpg" alt="Skrillex en su mesa de DJ">
     </section>
 
-    <!-- Tours -->
-    <section class="tours">
-        <h2>Tours</h2>
-        <div class="lugar">
-            <img src="img/skrillex-eeuu.jpg" alt="Lugar en vivo en estados unidos">
-            <img src="img/skrillex-eeuu.jpg" alt="Lugar en vivo en estados unidos">
-            <img src="img/skrillex-eeuu.jpg" alt="Lugar en vivo en estados unidos">
-        </div>
-        <div class="lugar">
-            <img src="img/skrillex-japan.jpg" alt="Lugar en vivo">
-            <img src="img/skrillex-japan.jpg" alt="Lugar en vivo">
-            <img src="img/skrillex-japan.jpg" alt="Lugar en vivo">
-        </div>
-        <div class="lugar">
-            <img src="img/skrillex-arg.jpg" alt="Lugar en vivo">
-            <img src="img/skrillex-arg.jpg" alt="Lugar en vivo">
-            <img src="img/skrillex-arg.jpg" alt="Lugar en vivo">
-        </div>
-    </section>
+
+   <!-- Tours -->
+<section id="tours" class="tours">
+  <h2 class="rubik-glitch-regular">Tours</h2>
+  <div class="grupo-tour">
+    <span class="fi fi-us fis bandera"></span>
+    <div class="galeria-tours">
+      <img src="img/skrillex-eeuu.jpg" alt="Tour en Estados Unidos 1">
+      <img src="img/skrillex-eeuu2.jpg" alt="Tour en Estados Unidos 2">
+      <img src="img/skrillex-eeuu3.jpg" alt="Tour en Estados Unidos 3">
+    </div>
+  </div>
+  <div class="grupo-tour">
+    <span class="fi fi-jp fis bandera"></span>
+    <div class="galeria-tours">
+      <img src="img/skrillex-japan.jpg" alt="Tour en Japón 1">
+      <img src="img/skrillex-japan2.jpg" alt="Tour en Japón 2">
+      <img src="img/skrillex-japan3.jpg" alt="Tour en Japón 3">
+    </div>
+  </div>
+  <div class="grupo-tour">
+    <span class="fi fi-ar fis bandera"></span>
+    <div class="galeria-tours">
+      <img src="img/skrillex-arg.jpg" alt="Tour en Argentina 1">
+      <img src="img/skrillex-arg2.jpg" alt="Tour en Argentina 2">
+      <img src="img/skrillex-arg3.jpg" alt="Tour en Argentina 3">
+    </div>
+  </div>
+</section>
+
+<!-- Festivales -->
+<section id="festivales" class="festivales">
+    <h2 class="rubik-glitch-regular">Festivales en los que participo</h2>
+    <div class="videos-festivales">
+        <iframe src="https://www.youtube.com/watch?v=ni2pGkTPLDo&t=2588s" title="Skrillex Ultra 2025" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/watch?v=mMvq44Bvr-w" title="Skrillex Red Rocks Amphitheatre 2014" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/watch?v=GjHf2ckHkeo" title="Jack U Ultra 2014" allowfullscreen></iframe>
+    </div>
+</section>
 
     <!-- Formulario de suscripción -->
-    <section class="suscripcion">
-        <h2>Suscribite</h2>
-        <h4>¡¡Recibe informacion en el acto de cuando lanza sus nuevas canciones o participa en eventos!!</h4>
+    <section id="suscripcion" class="suscripcion">
+        <h2 class="rubik-glitch-regular">Suscribite</h2>
+        <h4 class="rubik-bubbles-regular">¡¡Recibe informacion en el acto de cuando lanza sus nuevas canciones o participa en eventos!!</h4>
         <br>
         <form>
             <input type="text" name="nombre" placeholder="Nombre">
             <input type="text" name="apellido" placeholder="Apellido">
-            <input type="email" name="email" placeholder="Email">
-            <input type="tel" name="celular" placeholder="Celular" pattern="[0-9]+" minlength="8">
-            
-            <!-- Switch de términos (simulado con checkbox) -->
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="celular" placeholder="Celular" pattern="[0-9]+" minlength="8" required>
+            <!-- Switch de términos -->
             <label>
                 <input type="checkbox" required>
                 ¿Acepta los términos?
             </label>
-
             <button type="submit">Enviar</button>
         </form>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>Lorem ipsum dolor sit amet.</p>
+    <footer id="footer-redes">
+        <p class="rubik-maze-regular">Redes Sociales</p>
         <div class="footer-redes">
-            <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-            <a href="#"><img src="svg/cloud_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Sound Cloud"></a>
-            <a href="#"><img src="svg/youtube_activity_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Youtube"></a>
-            <a href="#"><img src="instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="twitter.png" alt="Twitter"></a>
+            <a href="https://soundcloud.com/skrillex"><img src="svg/soundcloud.svg" alt="Sound Cloud"></a>
+            <a href="https://www.youtube.com/@Skrillex"><img src="svg/youtube.svg" alt="Youtube"></a>
+            <a href="https://open.spotify.com/intl-es/artist/5he5w2lnU9x7JFhnwcekXX?si=uWTmNBYSQkKPtZ-9Q7xiuA"><img src="svg/spotify.svg" alt="Spotify"></a>
+            <a href="https://www.instagram.com/skrillex/"><img src="svg/instagram.svg" alt="Instagram"></a>
+            <a href="https://x.com/Skrillex"><img src="svg/twitter.svg" alt="Twitter o X"></a>
         </div>
-        <p>&copy; 2025 Skrillex Fan Page - Todos los derechos reservados</p>
-        <p>Hecho por <a href="#">Lucas Damian Cabrera</a></p>
-
+        <p class="rubik-maze-regular">&copy; 2025 Skrillex Fan Page - Todos los derechos reservados</p>
+        <p class="rubik-maze-regular">Hecho por <a href="https://github.com/cabreralucas23/SkrillexLandingPage" class="rubik-broken-fax-regular">Lucas Damian Cabrera</a></p>
     </footer>
-
 </body>
 </html>

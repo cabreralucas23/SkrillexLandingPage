@@ -13,19 +13,36 @@ body {
     line-height: 1.6;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /* FONTS */
+
 .rubik-glitch-regular {
   font-family: "Rubik Glitch", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
-/*Iconos*/
+.rubik-bubbles-regular {
+  font-family: "Rubik Bubbles", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
+.rubik-broken-fax-regular {
+  font-family: "Rubik Broken Fax", system-ui;
+  font-weight: 200;
+  font-style: normal;
+}
 
-
-
-/* Menú hamburguesa fijo y desplegable */
+.rubik-maze-regular {
+  font-family: "Rubik Maze", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* Overlay oculto por defecto */
 .overlay {
@@ -152,10 +169,6 @@ body {
     letter-spacing: 5px;
 }
 
-/* Imagenes */
-
-
-
 /* Video de Youtube (iframe) */
 
 .video {
@@ -205,30 +218,71 @@ body {
     margin: 2rem 0;
 }
 
-/* Tours (galería con banderas) */
+/* Tours */
 
 .tours {
-    padding: 2rem;
-    background-color: #000;
-    text-align: center;
+  padding: 2rem;
+  background: #000;
+  text-align: center;
+  color: #f0f0f0;
 }
 
 .tours h2 {
-    margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
 }
 
-.lugar {
+.grupo-tour {
+  margin-bottom: 3rem;
+}
+
+.bandera {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.galeria-tours {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.galeria-tours img {
+  width: 100%;
+  max-width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  border: 2px solid #ff0000;
+  object-fit: cover;
+}
+
+/* Festivales */
+.festivales {
+    padding: 2rem;
+    background-color: #111;
+    text-align: center;
+    color: white;
+}
+
+.festivales h2 {
     margin-bottom: 1.5rem;
-    position: relative;
 }
 
-.lugar img {
-    width: 90%;
-    max-width: 400px;
+.videos-festivales {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.videos-festivales iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
     border-radius: 10px;
-    border: 2px solid #fff;
-}
-
+} 
 
 /* Formulario de suscripción */
 
